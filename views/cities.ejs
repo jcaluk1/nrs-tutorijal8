@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Cities</h1>
+    <ul> 
+        <% results.map((result)=>{%>
+          <li>
+              <%= result.id %>, <%= result.naziv %>, <%= result.brojStanovnika %>
+            </li>
+        <%}) %>
+    </ul>
+
+</body>
+</html>
