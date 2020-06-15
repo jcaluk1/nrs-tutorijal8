@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const {City, connection} = require("./db");
 
-
 const PORT = 8888;
 
 app.use(express.json());
@@ -30,8 +29,8 @@ app.get("/gradovi/:id", (req, res) => {
 });
 
 app.delete("/gradovi/:id", (req, res) => {
-    City.destroy(({where:{id:req.params.id}})).then((city) => {
-        res.send(city);
+    City.destroy(({where:{id:req.params.id}})).then(() => {
+        res.send({message: `City with Id ${req.params.id} deleted`});
     })
 })
 
@@ -58,4 +57,4 @@ app.put("/gradovi", async (req,res) => {
 });
 
 
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+module.exports = app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

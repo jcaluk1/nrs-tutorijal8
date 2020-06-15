@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "17f1171b-b225-4f0e-8ed1-e4711d86c58e",
+		"name": "Cities-CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8888",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/gradovi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/gradovi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"gradovi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/gradovi/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/gradovi/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"gradovi",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/gradovi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"grad\" : {\n\t\t\"naziv\" : \"Bihac\",\n\t\t\"brojStanovnika\" : 330000\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8888/gradovi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"gradovi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/gradovi",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"grad\" : {\n\t\t\"id\" : 5,\n\t\t\"brojStanovnika\" : 1130000\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8888/gradovi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"gradovi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/gradovi/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/gradovi/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"gradovi",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

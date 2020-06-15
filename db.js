@@ -1,8 +1,11 @@
 const Sequelize = require("sequelize");
 
+const path = (process.env.NODE_ENV === "test") ? "./test/db.db" : "./db.db";
+
 const connection = new Sequelize("Jasmin", "root", "root", {
-    host: "db.db",
     dialect: "sqlite",
+    storage: path
+    
 });
 
 const db = {};

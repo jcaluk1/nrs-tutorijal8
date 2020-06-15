@@ -4,20 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "set NODE_ENV=test node init.js && mocha",
+    "start": "init.js && node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jcaluk1/nrs-tutorijal7.git"
+    "url": "git+https://github.com/jcaluk1/nrs-tutorijal8.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jcaluk1/nrs-tutorijal7/issues"
+    "url": "https://github.com/jcaluk1/nrs-tutorijal8/issues"
   },
-  "homepage": "https://github.com/jcaluk1/nrs-tutorijal7#readme",
+  "homepage": "https://github.com/jcaluk1/nrs-tutorijal8#readme",
   "dependencies": {
     "ejs": "^3.1.3",
     "express": "^4.17.1",
@@ -25,6 +25,9 @@
     "sqlite3": "^4.2.0"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.0.1",
     "nodemon": "^2.0.4"
   }
 }
