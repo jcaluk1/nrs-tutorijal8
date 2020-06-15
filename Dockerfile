@@ -3,4 +3,4 @@ WORKDIR /usr/src/app
 COPY . .
 RUN npm install
 EXPOSE 8888
-CMD ["node", "index.js"]
+ENTRYPOINT npm start
